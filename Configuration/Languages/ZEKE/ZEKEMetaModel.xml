@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<metaModel file_level="client" file_no="130">
+
+<!-- Generic definitions: not to be changed even in case of evolutions -->
+
+	<!-- GrepTag:APM_ZEKE_categories -->
+	<category name="APM ZEKE Module" rid="2130100">
+		<description>ZEKE</description>
+		<inheritedCategory name="APM Client Modules"/>
+	</category>
+
+	<category name="APM ZEKE Artifacts" rid="2130101">
+		<description>ZEKE Artifacts</description>
+		<inheritedCategory name="APM Client Language Artifacts"/>
+	</category>
+
+	<!-- ZEKE Files extensions -->	
+	<category name="ZEKE" rid="2130102">
+		<description>ZEKE</description>
+		<attribute name="extensions" stringValue="*.zeke"/>
+		<inheritedCategory name="UniversalLanguage"/>
+		<inheritedCategory name="CsvLanguage"/>
+	</category>
+
+	<!-- ZEKE Project -->
+	<type name="ZEKEProject" rid="2130103">
+		<description>ZEKE Project</description>
+		<inheritedCategory name="UAProject"/>
+		<inheritedCategory name="ZEKE"/>
+        <inheritedCategory name="APM ZEKE Module"/>
+	</type>
+
+	<type name="ZEKE_SUBSET" rid="2130199">
+		<description>ZEKE Subset</description>
+		<inheritedCategory name="PROJECT_SUBSET"/>
+		<inheritedCategory name="ZEKE"/>
+		<inheritedCategory name="APM ZEKE Module"/>
+	</type>
+
+	
+	<!-- ZEKE Enlighten group -->
+	<type name="EnlightenZEKE" rid="2130104">
+		<description>ZEKE</description>
+		<tree parent="EnlightenUniversalObjects" category="EnlightenTree"/>
+	</type>
+
+
+
+	
+
+		
+<!-- End of Generic definitions -->
+
+	<category name="ZEKEProperties" rid="2130001">
+        <description>Custom properties for ZEKE</description>
+        <property name="applId" type="string" rid="2130002">
+            <description>Appl Id</description>
+            <attribute name="INF_TYPE" intValue="2130003"/>
+            <attribute name="INF_SUB_TYPE" intValue="0"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+		</property>
+		<property name="grpId" type="string" rid="2130004">
+            <description>Grp Id</description>
+            <attribute name="INF_TYPE" intValue="2130005"/>
+            <attribute name="INF_SUB_TYPE" intValue="0"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+		</property>
+		<property name="system" type="string" rid="2130006">
+            <description>System</description>
+            <attribute name="INF_TYPE" intValue="2130007"/>
+            <attribute name="INF_SUB_TYPE" intValue="0"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+		</property>
+		<property name="schedTime" type="string" rid="2130008">
+            <description>Sched Time</description>
+            <attribute name="INF_TYPE" intValue="2130009"/>
+            <attribute name="INF_SUB_TYPE" intValue="0"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+		</property>
+		<property name="description" type="string" rid="2130010">
+            <description>description</description>
+            <attribute name="INF_TYPE" intValue="2130011"/>
+            <attribute name="INF_SUB_TYPE" intValue="0"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+		</property>
+		<property name="calid" type="string" rid="2130012">
+            <description>calid</description>
+            <attribute name="INF_TYPE" intValue="2130013"/>
+            <attribute name="INF_SUB_TYPE" intValue="0"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+		</property>
+		<property name="control" type="string" rid="2130014">
+            <description>Control</description>
+            <attribute name="INF_TYPE" intValue="2130015"/>
+            <attribute name="INF_SUB_TYPE" intValue="0"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+		</property>
+	</category>
+	
+	<type name="ZEKEJob" rid="2130107">
+		<description>ZEKE Job</description>
+		<inheritedCategory name="UAObject" />
+        <inheritedCategory name="METRICABLE" />
+        <inheritedCategory name="ZEKE" />
+        <inheritedCategory name="APM ZEKE Artifacts" />
+        <tree parent="EnlightenZEKE" category="EnlightenTree" />
+		
+		<tree parent="sourceFile" category="amtParentship"/>
+	</type>
+
+	<type name="ZEKEEvent" rid="2130108">
+		<description>ZEKE Event</description>
+		<inheritedCategory name="UAObject" />
+        <inheritedCategory name="METRICABLE" />
+        <inheritedCategory name="ZEKE" />
+        <tree parent="EnlightenZEKE" category="EnlightenTree" />
+		
+		<inheritedCategory name="ZEKEProperties"/>
+		<tree parent="sourceFile" category="amtParentship"/>
+	</type>
+
+	<type name="ZEKESection" rid="2130106">
+		<description>ZEKE Section</description>
+		<inheritedCategory name="UAObject" />
+        <inheritedCategory name="METRICABLE" />
+        <inheritedCategory name="ZEKE" />
+        <inheritedCategory name="APM ZEKE Artifacts" />
+        <tree parent="EnlightenZEKE" category="EnlightenTree" />
+				
+		<tree parent="sourceFile" category="amtParentship"/>
+		<tree parent="ZEKEProject" category="amtParentship"/>
+	</type>
+
+</metaModel>

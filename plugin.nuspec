@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>com.castsoftware.uc.zeke</id>
+    <version>1.0.2</version>
+    <title>ZEKE</title>
+    <authors>CAST User Community</authors>
+    <owners>CAST</owners>
+    <licenseUrl>https://extend.castsoftware.com/V2/Licenses/Cast-Licence-UserCommunity-1.0.html</licenseUrl>
+    <projectUrl>https://github.com/CAST-Extend/com.castsoftware.uc.zeke/wiki</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/CAST-Extend/com.castsoftware.uc.zeke/master/ZEKE.PNG</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This Field Extension provides ZEKE support</description>
+    <releaseNotes>https://github.com/CAST-Extend/com.castsoftware.uc.zeke/wiki#version-100-release-notes</releaseNotes>
+    <tags>CASTUserCommunity Framework CSS Oracle MS CAIP8.0.x CAIP8.1.x CAIP8.2.x CAIP8.3.x ZEKE techno:mainframe</tags>
+    <dependencies>
+      <dependency id="CAIP" version="7.3.6" />
+      <dependency id="com.castsoftware.dmtgenericfilediscoverer" version="1.0.3" />
+    </dependencies>
+  </metadata>
+</package>
